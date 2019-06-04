@@ -1,0 +1,54 @@
+﻿@model IList<DomainCompany.Entities.Banner>
+@if (Model != null && Model.Any())
+{
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.car-banners').slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                accessibility: false,
+                slidesToShow: 1
+            });
+        });
+    </script>
+
+    List<DomainCompany.Entities.Banner> bannerRandom = Model.Where(b => b.Random == true).ToList();
+    List<DomainCompany.Entities.Banner> bannerNoRandom = Model.Where(b => b.Random == false).ToList();
+
+    if (bannerRandom.Any())
+    {
+
+        <div class="ui fluid container car-banners no-margin">
+            @foreach (var randombanner in bannerRandom)
+            {
+                <div id="divFullBanner">
+                    <div style="position:relative">
+                        <a href="@randombanner.Link">
+                            <img src="@randombanner.NameFileImage" class="ui fluid image" alt="@randombanner.Name" onerror="imgError(this)"/>
+                        </a>
+                    </div>
+                    <div style="width: 45%;  height: 70px;  position: relative;  margin-top: -100px;  margin-left: 120px;">
+                        <label class="ui fluid" style="font-size:30px; color: white;">@randombanner.Description</label>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    if (bannerNoRandom.Any())
+    {
+        <div class="ui divider hidden"></div>
+        <div class="ui images middle aligned center aligned">
+            @foreach (var banner in bannerNoRandom)
+            {
+                <a href="@banner.Link">
+                    <img src="@banner.NameFileImage" class="ui image" alt="@banner.Name" onerror="imgError(this)" />
+                </a>
+            }
+        </div>
+    }
+
+}

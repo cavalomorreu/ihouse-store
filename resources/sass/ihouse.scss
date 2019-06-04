@@ -1,0 +1,235 @@
+$azul-claro: #00AAE1;
+$azul-medio: #0000BE;
+$azul-escuro: #0b4576;
+
+body{
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+.prompt{
+  background:transparent !important;
+  border:solid 2px $azul-escuro !important;
+}
+
+#cartButton{
+  .button{
+    border:solid 1px $azul-escuro !important; 
+    border-top-right-radius: .28571429rem !important;
+    border-bottom-right-radius: .28571429rem !important;
+    &:hover{
+      background:$azul-escuro !important;
+    }
+  }
+}
+
+.megamenu{
+  background-color:rgba(255,255,255,.8);
+  .parent-item-sub{
+    &:hover{
+      background-color:rgba(255,255,255,1);
+    }
+  }
+}
+
+.menuheader, .topbar, .footer{
+  background:$azul-escuro !important;
+}
+
+.card.produto .content .info .sku-options{
+  background:transparent;
+}
+
+.icon-primario{
+  position:absolute;
+  right:10px;
+  top:30px;
+}
+
+.item-sub{
+  h4{
+    text-align:center;
+    a{
+      display:inline-block;
+      margin:0 auto;
+    }
+  }
+}
+
+.car-marcas .slick-track{
+  display:flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#modalNewsLetter{  
+  border:solid 2px $azul-escuro !important;
+  width:40% !important;
+  margin-left:-20% !important;
+  h4{
+    color: $azul-escuro !important;
+    text-align:center;
+    font-size:30px;
+  }
+  input{
+    border-color: $azul-escuro !important;
+  }
+  .description{
+    text-align:center;
+  }
+  button{
+    border:solid 1px $azul-escuro !important; 
+    color:$azul-escuro !important;
+    margin:0 auto;
+    &:hover{
+      background:$azul-escuro !important;   
+      color:#FFF !important;
+      border:none !important; 
+    }
+  }
+}
+
+.card.produto:focus, .card.produto:hover{
+  -webkit-box-shadow: 0 1px 3px 0 $azul-escuro,0 0 0 1px $azul-escuro!important; 
+  box-shadow: 0 1px 3px 0 $azul-escuro,0 0 0 1px $azul-escuro!important; 
+}
+
+.subFooter{
+  background:#FFF !important;
+  color:$azul-escuro !important;
+  p{
+    font-size:30px !important;
+    line-height:0px !important;    
+  }
+  address{
+    font-size:16px !important;
+  }
+}
+
+.jetBrand{
+  background:#FFF !important;
+  height:60px !important;
+  #jetLogo{
+    height:50px !important;
+    .cinza{
+      fill:#000 !important;
+    }
+  }
+}
+
+.ui.horizontal.divider:after{
+    background-image: url(https://static-ihouse.plataformaneo.com.br/layout/after.png) !important;
+    background-repeat:no-repeat !important;
+    height:15px !important;  
+}
+
+.ui.horizontal.divider:before {
+    background-image: url(https://static-ihouse.plataformaneo.com.br/layout/before.png) !important;
+    background-repeat:no-repeat !important;
+    height:15px !important;
+}
+
+.ui.facebook.button, .ui.instagram.button{
+  background-color:transparent !important;
+  border:solid 1px #FFF;
+  &:hover{
+    border:solid 1px $azul-escuro !important;
+  }
+}
+
+#miniCarrinho, .ui.sidebar.carrinho{
+  background-color:rgba(11,69,118,.9) !important;
+}
+
+#miniCarrinho .row.head, .ui.sidebar.carrinho .row.head{
+  background:#FFF;
+  color:$azul-escuro;
+}
+
+#miniCarrinho *{
+  color:#FFF !important;
+}
+
+#miniCarrinho input{
+  color:#0b4576 !important;
+}
+
+#miniCarrinho h3{
+  color:#000 !important;
+}
+
+#miniCarrinho .detalhes h3{
+  color:$azul-claro !important;
+}
+
+#miniCarrinho .qtd button:first-of-time{
+  border-top: solid 1px $azul-claro !important;
+  border-bottom: solid 1px $azul-claro !important;
+  border-left: solid 1px $azul-claro !important;
+}
+
+#miniCarrinho .qtd button:last-of-time{
+  border-top: solid 1px $azul-claro !important;
+  border-bottom: solid 1px $azul-claro !important;
+  border-right: solid 1px $azul-claro !important;
+}
+
+#miniCarrinho .qtd button i{
+  color:$azul-claro !important;
+}
+
+#miniCarrinho .remove{
+  color:$azul-escuro !important;
+}
+
+#miniCarrinho #mini-carrinho-checkout .hidden i{
+  color:$azul-escuro !important;
+}
+
+#miniCarrinho .removeCartItem{
+  color:#FFF !important;
+}
+
+.jetBg{
+  background-color:rgba(11,69,118,.9) !important;
+  .container{
+    background:#FFF !important;
+  }
+}
+
+.dados-compra{
+  color:$azul-escuro;
+}
+
+.asd{  
+  background:$azul-escuro !important;
+}
+
+.marginlefting {
+ margin-left: 0px !important;
+}
+
+.displaynone {
+ display: none !important;
+}
+
+.displayblock {
+ display: block !important;
+}
+
+.sidebar .item i {
+ font-size: 24px;
+ margin-top: -5px !important;
+}
+
+.title.item {
+ padding: .92857143em 1.14285714em !important;
+}
+
+.dropdown .menu .header {
+ padding-top: 3.9px!important;
+ padding-bottom: 3.9px!important;
+}
+
+.ui[class*="very thin"].left.sidebar, .ui[class*="very thin"].right.sidebar{
+  width:0px !important;
+}

@@ -1,0 +1,68 @@
+@model List<DomainProduct.Entities.Category>
+
+<div class="ui container fluid menuheader">
+    <div class="ui sidebar vertical left menu">
+    @foreach (DomainProduct.Entities.Category category in Model)
+    {
+        if (category.ChildCategories != null && category.ChildCategories.Any())
+        {
+            <div class="ui accordion">
+            	<div class="title item">
+            	  <a href="@category.UrlFriendly" class="title item item-primario">@category.Name</a>
+			      <i class="dropdown icon icon-primario"></i>
+			    </div>
+               
+                    @if (category.ChildCategories != null && category.ChildCategories.Any())
+                    {
+                    	<div class="content">
+                        @foreach (DomainProduct.Entities.Category subCategoryLevel1 in category.ChildCategories)
+                        {
+                            
+                            if (subCategoryLevel1.ChildCategories != null && subCategoryLevel1.ChildCategories.Any())
+                            {
+                            	<div class="ui accordion">
+                            	<div class="title item">
+				            	  <a class="title item" href="@subCategoryLevel1.UrlFriendly">@subCategoryLevel1.Name</a>
+							      <i class="dropdown icon"></i>
+							    </div>
+                                
+                                @foreach (DomainProduct.Entities.Category subCategoryLevel2 in subCategoryLevel1.ChildCategories)
+                                {
+                                	<a class="title item" href="@subCategoryLevel2.UrlFriendly">@subCategoryLevel2.Name</a>
+                                }
+                                </div>
+                            }else
+                            {
+                            	 <div class="ui">
+					                <a class="title item" href="@subCategoryLevel1.UrlFriendly">@subCategoryLevel1.Name</a>
+					            </div>	
+                            }
+                            
+                        }
+                		</div>
+                    }
+            </div>
+        }
+        else
+        {
+            <div class="ui">
+                <a class="title item" href="~/category/index/@category.IdCategory"><span>@category.Name</span></a>
+            </div>
+        }
+    }
+    </div>
+    <div class="pusher">
+        <div class="ui menu asd borderless" style="border-radius: 0!important; border: 0; -webkit-transition-duration: 0.1s;">
+            <a class="item openbtn">
+            <i class="icon content" style="height:auto !important;"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(".openbtn").on("click", function() {
+   $(".ui.sidebar.menu").sidebar('toggle');
+
+ });
+</script>

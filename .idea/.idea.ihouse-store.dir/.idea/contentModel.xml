@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="node_modules/axios" t="IncludeRecursive" />
+      <e p="node_modules/browser-sync" t="IncludeRecursive" />
+      <e p="node_modules/browser-sync-webpack-plugin" t="IncludeRecursive" />
+      <e p="node_modules/card" t="IncludeRecursive" />
+      <e p="node_modules/cross-env" t="IncludeRecursive" />
+      <e p="node_modules/easyzoom" t="IncludeRecursive" />
+      <e p="node_modules/jetcheckout" t="IncludeRecursive" />
+      <e p="node_modules/jetroute" t="IncludeRecursive" />
+      <e p="node_modules/jquery" t="IncludeRecursive" />
+      <e p="node_modules/jquery-ajax-unobtrusive" t="IncludeRecursive" />
+      <e p="node_modules/jquery-datepicker" t="IncludeRecursive" />
+      <e p="node_modules/jquery-mask-plugin" t="IncludeRecursive" />
+      <e p="node_modules/jquery-touch-events" t="IncludeRecursive" />
+      <e p="node_modules/jquery-validation" t="IncludeRecursive" />
+      <e p="node_modules/laravel-mix-jet" t="IncludeRecursive" />
+      <e p="node_modules/lodash" t="IncludeRecursive" />
+      <e p="node_modules/mobile-detect" t="IncludeRecursive" />
+      <e p="node_modules/sass-semantic-ui" t="IncludeRecursive" />
+      <e p="node_modules/semantic-ui-calendar" t="IncludeRecursive" />
+      <e p="node_modules/slick-carousel" t="IncludeRecursive" />
+      <e p="node_modules/sweetalert2" t="IncludeRecursive" />
+      <e p="node_modules/toastr" t="IncludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_.19.00" t="ExcludeRecursive" />
+  </component>
+</project>

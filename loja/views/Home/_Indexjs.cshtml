@@ -1,0 +1,27 @@
+<div class="ui modal" id="modalNewsLetter">
+  <i class="close icon"></i>
+  <div class="header">
+    <h4>Newsletter</h4>
+  </div>
+  <div class="ontent">
+    <div class="description">
+        <p>Cadastre seu e-mail e receba novidades e promoções.</p>
+        <div class="ui form">
+            <div class="field">
+                <i class="mail icon"></i>
+                <input type="text" placeholder="seu@email.com.br" id="email_news">
+            </div>
+            <button class="ui button inverted basic white" id="btn_news">
+                <i class="send outline icon"></i>Cadastrar
+            </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#modalNewsLetter')
+        .modal();
+    })
+</script>

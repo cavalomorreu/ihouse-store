@@ -1,0 +1,58 @@
+@{
+    ViewBag.Title = "Neo - Omnichannel Commerce Platform";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+
+<!-- ~/Views/Shared/Blocks/Banner/_FullBanner.cshtml -->
+@Html.Action("FullBanner", "Banner")
+
+<div class="featuredProducts">
+    <!-- ~/Views/Shared/Blocks/Product/_FeaturedProducts.cshtml -->
+    @Html.Action("FeaturedProducts", "Product")
+</div>
+
+<!-- ~/Views/Shared/Blocks/_CentralHalfBanner.cshtml -->
+@Html.Action("CentralHalfBanner", "Banner")
+
+<!-- ~/Views/Shared/Blocks/Group/_Groups.cshtml -->
+@Html.Action("Group", "Group")
+
+<!-- ~/Views/Shared/Blocks/Banner/_FooterHalfBanner.cshtml -->
+@Html.Action("FooterHalfBanner", "Banner")
+
+<!-- ~/Views/Shared/Blocks/Brand/_Brands.cshtml -->
+@Html.Action("Brand", "Product")
+
+<div class="ui modal" id="modalNewsLetter">
+  <i class="close icon"></i>
+  <div class="header">
+    <h4>Newsletter</h4>
+  </div>
+  <div class="content">
+    <div class="description">
+        <p>Cadastre seu e-mail e receba novidades e promoções.</p>
+        <div class="ui form">
+            <div class="field">
+                <div class="ui left icon input">
+                    <input type="text" placeholder="seu@email.com.br" id="email_news">
+                    <i class="mail icon"></i>
+                </div>
+            </div>
+            <button class="ui button inverted basic black btn_news">
+                <i class="send outline icon"></i>Cadastrar
+            </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+@section custom_js {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.ui.modal')
+            .modal('show')
+            ;
+        }); 
+    </script>
+}
